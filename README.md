@@ -2,8 +2,8 @@
 **How to do secure coding and create secure software.**
 ----
 
-I can do secure coding and no one can hack my code unless the language itself
-has some issues. You can challenge me on this.
+I can do secure coding and no one can hack my code unless the language/OS have
+some issues. You can challenge me on this.
 
 Ultimately, all software boil down to functions/methods. If functions/methods
 are secure then the whole software is secure.
