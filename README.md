@@ -52,9 +52,9 @@ they are not visible outside the file.
 user will actually need, rest of the functions should be private/protected in
 object oriented languages and static in C language.
 
-4. Initialize all variables (global/local/private/protected/public) to proper
-values (in C/C++ uninitialized global and static variables are automatically
-initialized to 0).
+4. Initialize all variables (global/local/static/private/protected/public) to
+   proper values (in C/C++ uninitialized global and static variables are
+   automatically initialized to 0).
 
 In my opinion, if you follow these points then your functions/software will be
 secure. I follow these points and my functions/software are fully secure, they
