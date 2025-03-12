@@ -1,5 +1,5 @@
 
-**How to do secure coding and create secure software**
+**How to do secure coding and create secure software.**
 ----
 
 I can do secure coding and no one can hack my code unless the language itself
