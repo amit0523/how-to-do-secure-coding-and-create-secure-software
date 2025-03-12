@@ -29,20 +29,7 @@ be "len = strnlen(str, 1025); if (len >= 1025) { return error; }". Similarly,
 your 'int' arguments, 'float' arguments, etc. should also have a bounded range.
 Also, always check a pointer argument whether it is NULL or not.
 
-2. Avoid using global variables. In object oriented languages avoid using public
-variables as much as possible. In C language also you should avoid global
-variables, but in case you need to use some, then make them 'static' so that
-they are not visible outside the file.
-
-3. Don't expose all functions to the user. Expose only those functions that the
-user will actually need, rest of the functions should be private/protected in
-object oriented languages and static in C language.
-
-4. Initialize all variables (global/local/private/protected/public) to proper
-values (in C/C++ uninitialized global and static variables are automatically
-initialized to 0).
-
-Now, an opposing argument may be that checking all the function arguments will
+Now, a counterpoint can be that checking all the function arguments will
 take more time but actually because of very fast processors available these
 days, it will not take noticeable time. On a 1 GHz processor, you can execute
 1 Gig (2^30 or 10^9 for simplicity) instructions per second. So, if you are
@@ -55,6 +42,19 @@ and another 5 instructions for comparing the len variable to the MAX string len,
 then we have 11 instructions per character. If the length we want to check is
 1000 then it will be 11,000 instructions and it will take only 11 microseconds
 (11 * 10^-6 seconds). So, this time is also not noticeable.
+
+2. Avoid using global variables. In object oriented languages avoid using public
+variables as much as possible. In C language also you should avoid global
+variables, but in case you need to use some, then make them 'static' so that
+they are not visible outside the file.
+
+3. Don't expose all functions to the user. Expose only those functions that the
+user will actually need, rest of the functions should be private/protected in
+object oriented languages and static in C language.
+
+4. Initialize all variables (global/local/private/protected/public) to proper
+values (in C/C++ uninitialized global and static variables are automatically
+initialized to 0).
 
 In my opinion, if you follow these points then your functions/software will be
 secure. I follow these points and my functions/software are fully secure, they
