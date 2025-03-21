@@ -53,12 +53,12 @@ user will actually need, rest of the functions should be private/protected in
 object oriented languages and static in C language.
 
 4. Always check the return values of the functions that you are calling before
-proceeding ahead. Don't assume that all functions will always succeed. If the
-function that you called returned an error and if you didn't check it and
-proceeded ahead then wrong things can happen and these wrong things can open a
-security hole in your software and your software may get hacked. It is quite
-possible that a function always succeeds in internal testing but it may fail
-when customers start using your software.
+proceeding ahead. Don't assume that all functions will always succeed.  It is
+quite possible that a function always succeeds in internal testing but it may
+fail when customers start using your software. If the function that you called
+returned an error and if you didn't check it and proceeded ahead then wrong
+things can happen and these wrong things can open a security hole in your
+software and your software may get hacked.
 
 5. Initialize all variables (global/local/static/private/protected/public) to
    proper values (in C/C++ uninitialized global and static variables are
